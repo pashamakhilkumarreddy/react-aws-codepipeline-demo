@@ -1,0 +1,13 @@
+header {
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-burger:hover {
+  background-color: unset !important;
+}
+
+.navbar-burger {
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
