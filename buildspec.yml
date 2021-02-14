@@ -6,12 +6,12 @@ phases:
       - echo Upgrading packages
       - apt-get update -y && apt-get upgrade -y
       # install Node LTS
-      - echo Installing Node
+      - echo installing Node
       - curl -sL https://deb.nodesource.com/setup_12.x | bash -
       - apt install -y nodejs
   pre_build:
     commands:
-      - echo Installing packages
+      - echo installing packages
       - npm i 
   build:
     commands:
@@ -23,4 +23,4 @@ artifacts:
   files:
     - "**/*"
   discard-paths: no
-  base-directory: dist
+  base-directory: build

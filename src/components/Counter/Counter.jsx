@@ -18,7 +18,7 @@ const Counter = () => {
   const [state, dispatch] = useReducer(countReducer, initialState);
   return (
     <div>
-      <CounterStyles.CounterValue>
+      <CounterStyles.CounterValue data-testid='counter-val'>
         Count:&nbsp;
         {state.count}
       </CounterStyles.CounterValue>

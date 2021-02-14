@@ -1,12 +1,12 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+// import { Helmet } from 'react-helmet-async';
 import Counter from '../../components/Counter';
 
 const Home = () => (
   <>
-    <Helmet>
+    {/* <Helmet>
       <title>Home | React AWS CodePipeline Demo</title>
-    </Helmet>
+    </Helmet> */}
     <h1 className='has-text-centered is-size-1'>Welcome to Counter Application</h1>
     <Counter />
   </>
