@@ -1,5 +1,7 @@
 {
   "name": "react-aws-codepipeline",
+  "author": "Pasham Akhil Kumar Reddy",
+  "license": "MIT",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,10 +24,10 @@
     "start:https": "react-scripts start",
     "lint": "eslint --ext .js --ext .jsx --ignore-pattern 'build/' src/**/*.jsx src/**/*.js",
     "lint:fix": "eslint --ext .js --ext .jsx --ignore-pattern 'build/' src/**/*.jsx src/**/*.js --fix",
-    "build": "react-scripts build",
+    "build": "rm -rf ./build && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prod": "rm -rf ./build && npm run build && pm2 serve build 8000 --name client --spa"
+    "prod": "npm run build && pm2 serve build 8000 --name client --spa"
   },
   "eslintConfig": {
     "extends": [
