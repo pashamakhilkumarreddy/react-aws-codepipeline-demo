@@ -13,14 +13,14 @@ phases:
     commands:
       - echo installing packages
       - npm i 
-  build:
-    commands:
       - echo Testing
       - npm run test
+  build:
+    commands: 
       - echo Building Project
       - npm run build
 artifacts:
   files:
-    - "**/*"
+    - '**/*'
   discard-paths: no
   base-directory: build
