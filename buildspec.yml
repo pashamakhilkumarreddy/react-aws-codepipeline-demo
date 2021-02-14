@@ -13,12 +13,15 @@ phases:
     commands:
       - echo installing packages
       - npm i 
-      - echo Testing
-      - npm run test
+      # - echo Testing
+      # - npm run test
   build:
     commands: 
-      - echo Building Project
+      - echo Building Project started on `date`
       - npm run build
+  post_build:
+    commands:
+      - echo Build is completed on `date`
 artifacts:
   files:
     - '**/*'
